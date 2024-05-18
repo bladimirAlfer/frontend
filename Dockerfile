@@ -1,14 +1,12 @@
-# Usar la imagen base de Nginx
+#Dockerfile para Frontend
+
 FROM nginx:alpine
+RUN apk update && apk add nano
+COPY default.conf /etc/nginx/conf.d/default.conf
 
-# Copiar el archivo de configuración de Nginx
-COPY nginx.conf /etc/nginx/nginx.conf
-
-# Copiar los archivos estáticos del frontend
+# Copiar los archivos de tu aplicación frontend al directorio de Nginx
 COPY . /usr/share/nginx/html
+EXPOSE 8000
 
-# Exponer el puerto para Nginx
-EXPOSE 80
-
-# Iniciar Nginx en primer plano
+# Comando para ejecutar Nginx en el contenedor
 CMD ["nginx", "-g", "daemon off;"]
