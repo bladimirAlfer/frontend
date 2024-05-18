@@ -1,4 +1,4 @@
-const BASE_URL = 'http://44.221.179.254:8011';
+const BASE_URL = 'http://3.210.43.14:8011';
 
 document.addEventListener('DOMContentLoaded', function() {
     loadCitas();
