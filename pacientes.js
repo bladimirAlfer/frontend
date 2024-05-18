@@ -1,4 +1,4 @@
-const BASE_URL_PACIENTES = 'http://3.210.43.14:8012';
+const BASE_URL_PACIENTES = 'http://52.72.247.76:8012';
 
 document.addEventListener('DOMContentLoaded', function() {
     loadPacientes();

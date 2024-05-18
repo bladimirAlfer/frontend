@@ -1,4 +1,4 @@
-const BASE_URL_MEDICOS = 'http://3.210.43.14:8010';
+const BASE_URL_MEDICOS = 'http://52.72.247.76:8010';
 
 document.addEventListener('DOMContentLoaded', function() {
     loadMedicos();
